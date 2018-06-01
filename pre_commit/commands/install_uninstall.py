@@ -22,8 +22,9 @@ PRIOR_HASHES = (
     '49fd668cb42069aa1b6048464be5d395',
     '79f09a650522a87b0da915d0d983b2de',
     'e358c9dae00eac5d06b38dfdb1e33a8c',
+    '138fd403232d2ddd5efb44317e38bf03',
 )
-CURRENT_HASH = '138fd403232d2ddd5efb44317e38bf03'
+CURRENT_HASH = 'c145ce377e165a96c892ec6b3d36e24d'
 TEMPLATE_START = '# start templated\n'
 TEMPLATE_END = '# end templated\n'
 

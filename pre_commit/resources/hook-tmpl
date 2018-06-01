@@ -9,13 +9,16 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 Z40 = '0' * 40
-ID_HASH = '138fd403232d2ddd5efb44317e38bf03'
+ID_HASH = 'c145ce377e165a96c892ec6b3d36e24d'
 # start templated
 CONFIG = None
 HOOK_TYPE = None
 INSTALL_PYTHON = None
 SKIP_ON_MISSING_CONFIG = None
 # end templated
+OLD_PATH = os.environ['PATH']
+INSTALL_PYTHON_DIRECTORY = os.path.dirname(INSTALL_PYTHON)
+NEW_PATH = '{}{}{}'.format(INSTALL_PYTHON_DIRECTORY, os.path.pathsep, OLD_PATH)
 
 
 class EarlyExit(RuntimeError):
